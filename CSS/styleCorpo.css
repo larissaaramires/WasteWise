@@ -458,6 +458,7 @@ section#inicio {
     }
 }
 
+
 /* ============================================
    SEÇÕES CATEGORIA / DESCARTE / ECOPONTO
    ============================================ */
@@ -1329,3 +1330,196 @@ section#inicio {
     background-color: var(--Off-white);
     transform: scale(1.2);
 }
+
+.secao-contato {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#meuFormulario {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+#meuFormulario input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#meuFormulario button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#mensagemSucesso {
+    font-size: 18px;
+    color: #2e7d32;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* ============================================
+   FORMULÁRIO DE CONTATO
+   ============================================ */
+#contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 20px auto 0 auto;
+}
+
+#contato input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid var(--Cinza-prata);
+    border-radius: 8px;
+    background-color: var(--Branco);
+}
+
+#contato button {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--Branco);
+    background-color: var(--Musgo);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contato button:hover {
+    background-color: var(--Verde-floresta);
+}
+
+#mensagemSucesso p {
+    font-size: 18px;
+    color: var(--Musgo);
+    font-weight: bold;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* ============================================
+   ESTILO DO QUADRADO/MODAL INTERATIVO
+   ============================================ */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-card {
+    background-color: var(--Branco);
+    padding: 35px 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    max-width: 420px;
+    width: 90%;
+    animation: popup 0.3s ease-out;
+}
+
+@keyframes popup {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* ESTILO DO MODAL INTERATIVO DO FORMULÁRIO */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-card {
+    background-color: var(--Branco);
+    padding: 35px 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    max-width: 420px;
+    width: 90%;
+    animation: popup 0.3s ease-out;
+}
+
+@keyframes popup {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.modal-card h3 {
+    color: var(--Musgo);
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.modal-card p {
+    color: var(--Grafite);
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+/* BOTÃO INTERATIVO "CONCLUÍDO" */
+#btnConcluido {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--Branco);
+    background-color: var(--Verde-folha);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
+    transition: all 0.2s ease-in-out;
+}
+
+#btnConcluido:hover {
+    background-color: var(--Musgo);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 95, 5, 0.4);
+}
+
+#btnConcluido:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 95, 5, 0.3);
+}
+
